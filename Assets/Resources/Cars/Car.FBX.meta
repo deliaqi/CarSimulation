@@ -1,0 +1,629 @@
+fileFormatVersion: 2
+guid: 9d3a97d574648324dbe045a7a4dda29a
+timeCreated: 1463831932
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: backdoor
+    100002: backdoor02
+    100004: backdoor03
+    100006: backdoor04
+    100008: backdoor05
+    100010: backdoor06
+    100012: backdoor07
+    100014: backdoor08
+    100016: backseats
+    100018: blinker
+    100020: blinker01
+    100022: body
+    100024: body01
+    100026: Box01
+    100028: Box02
+    100030: //RootNode
+    100032: chrome
+    100034: chrome 1
+    100036: chrome 2
+    100038: chrome01
+    100040: chrome02
+    100042: chrome03
+    100044: chrome04
+    100046: chrome05
+    100048: chrome06
+    100050: chrome07
+    100052: clocks
+    100054: compartment
+    100056: Cylinder01
+    100058: Cylinder02
+    100060: Cylinder04
+    100062: dash2
+    100064: dashboard
+    100066: door
+    100068: driverseat
+    100070: frontdoor
+    100072: frontdoor02
+    100074: frontdoor03
+    100076: frontdoor04
+    100078: frontwindscreen
+    100080: glass
+    100082: glass01
+    100084: Group01
+    100086: Group02
+    100088: Group03
+    100090: Group04
+    100092: Group05
+    100094: Group08
+    100096: Group09
+    100098: Group10
+    100100: Group11
+    100102: gum
+    100104: gum 1
+    100106: gum 2
+    100108: gum 3
+    100110: gum 4
+    100112: gum 5
+    100114: gum 6
+    100116: gum 7
+    100118: gum01
+    100120: gum02
+    100122: gum03
+    100124: gum04
+    100126: gum05
+    100128: gum06
+    100130: gum07
+    100132: gum08
+    100134: gum09
+    100136: gum10
+    100138: gum11
+    100140: gum12
+    100142: gum13
+    100144: gum14
+    100146: idrivecontrol
+    100148: innerhandlefl
+    100150: innerhandlefl02
+    100152: innerhandlerl
+    100154: innerhandlerl02
+    100156: interior
+    100158: lcd
+    100160: leftdoorsill01
+    100162: Line01
+    100164: Line02
+    100166: Line03
+    100168: ontunnelpanel
+    100170: passengerseat
+    100172: r light
+    100174: r light01
+    100176: rearleftfender
+    100178: rearwindscreen
+    100180: red
+    100182: red01
+    100184: red02
+    100186: red03
+    100188: roof
+    100190: sign
+    100192: sign 1
+    100194: sign01
+    100196: sign02
+    100198: sign03
+    100200: speakerfl
+    100202: speakerfl02
+    100204: speakerrl
+    100206: speakerrl02
+    100208: steringwheel
+    100210: trunk l
+    100212: trunkinterior
+    100214: Tube02
+    100216: Tube03
+    100218: undercarriage
+    100220: ventilation1
+    100222: ventilation3
+    100224: ventilation4
+    100226: ventilation5
+    100228: wheel
+    100230: wheel01
+    100232: wheel02
+    100234: wheel03
+    400000: backdoor
+    400002: backdoor02
+    400004: backdoor03
+    400006: backdoor04
+    400008: backdoor05
+    400010: backdoor06
+    400012: backdoor07
+    400014: backdoor08
+    400016: backseats
+    400018: blinker
+    400020: blinker01
+    400022: body
+    400024: body01
+    400026: Box01
+    400028: Box02
+    400030: //RootNode
+    400032: chrome
+    400034: chrome 1
+    400036: chrome 2
+    400038: chrome01
+    400040: chrome02
+    400042: chrome03
+    400044: chrome04
+    400046: chrome05
+    400048: chrome06
+    400050: chrome07
+    400052: clocks
+    400054: compartment
+    400056: Cylinder01
+    400058: Cylinder02
+    400060: Cylinder04
+    400062: dash2
+    400064: dashboard
+    400066: door
+    400068: driverseat
+    400070: frontdoor
+    400072: frontdoor02
+    400074: frontdoor03
+    400076: frontdoor04
+    400078: frontwindscreen
+    400080: glass
+    400082: glass01
+    400084: Group01
+    400086: Group02
+    400088: Group03
+    400090: Group04
+    400092: Group05
+    400094: Group08
+    400096: Group09
+    400098: Group10
+    400100: Group11
+    400102: gum
+    400104: gum 1
+    400106: gum 2
+    400108: gum 3
+    400110: gum 4
+    400112: gum 5
+    400114: gum 6
+    400116: gum 7
+    400118: gum01
+    400120: gum02
+    400122: gum03
+    400124: gum04
+    400126: gum05
+    400128: gum06
+    400130: gum07
+    400132: gum08
+    400134: gum09
+    400136: gum10
+    400138: gum11
+    400140: gum12
+    400142: gum13
+    400144: gum14
+    400146: idrivecontrol
+    400148: innerhandlefl
+    400150: innerhandlefl02
+    400152: innerhandlerl
+    400154: innerhandlerl02
+    400156: interior
+    400158: lcd
+    400160: leftdoorsill01
+    400162: Line01
+    400164: Line02
+    400166: Line03
+    400168: ontunnelpanel
+    400170: passengerseat
+    400172: r light
+    400174: r light01
+    400176: rearleftfender
+    400178: rearwindscreen
+    400180: red
+    400182: red01
+    400184: red02
+    400186: red03
+    400188: roof
+    400190: sign
+    400192: sign 1
+    400194: sign01
+    400196: sign02
+    400198: sign03
+    400200: speakerfl
+    400202: speakerfl02
+    400204: speakerrl
+    400206: speakerrl02
+    400208: steringwheel
+    400210: trunk l
+    400212: trunkinterior
+    400214: Tube02
+    400216: Tube03
+    400218: undercarriage
+    400220: ventilation1
+    400222: ventilation3
+    400224: ventilation4
+    400226: ventilation5
+    400228: wheel
+    400230: wheel01
+    400232: wheel02
+    400234: wheel03
+    2300000: backdoor
+    2300002: backdoor02
+    2300004: backdoor03
+    2300006: backdoor04
+    2300008: backdoor05
+    2300010: backdoor06
+    2300012: backdoor07
+    2300014: backdoor08
+    2300016: backseats
+    2300018: blinker
+    2300020: blinker01
+    2300022: body
+    2300024: body01
+    2300026: Box01
+    2300028: Box02
+    2300030: chrome
+    2300032: chrome 1
+    2300034: chrome 2
+    2300036: chrome01
+    2300038: chrome02
+    2300040: chrome03
+    2300042: chrome04
+    2300044: chrome05
+    2300046: chrome06
+    2300048: chrome07
+    2300050: clocks
+    2300052: compartment
+    2300054: Cylinder01
+    2300056: Cylinder02
+    2300058: Cylinder04
+    2300060: dash2
+    2300062: dashboard
+    2300064: driverseat
+    2300066: frontdoor
+    2300068: frontdoor02
+    2300070: frontdoor03
+    2300072: frontdoor04
+    2300074: frontwindscreen
+    2300076: glass
+    2300078: glass01
+    2300080: gum
+    2300082: gum 1
+    2300084: gum 2
+    2300086: gum 3
+    2300088: gum 4
+    2300090: gum 5
+    2300092: gum 6
+    2300094: gum 7
+    2300096: gum01
+    2300098: gum02
+    2300100: gum03
+    2300102: gum04
+    2300104: gum05
+    2300106: gum06
+    2300108: gum07
+    2300110: gum08
+    2300112: gum09
+    2300114: gum10
+    2300116: gum11
+    2300118: gum12
+    2300120: gum13
+    2300122: gum14
+    2300124: idrivecontrol
+    2300126: innerhandlefl
+    2300128: innerhandlefl02
+    2300130: innerhandlerl
+    2300132: innerhandlerl02
+    2300134: interior
+    2300136: lcd
+    2300138: leftdoorsill01
+    2300140: Line01
+    2300142: Line02
+    2300144: Line03
+    2300146: ontunnelpanel
+    2300148: passengerseat
+    2300150: r light
+    2300152: r light01
+    2300154: rearleftfender
+    2300156: rearwindscreen
+    2300158: red
+    2300160: red01
+    2300162: red02
+    2300164: red03
+    2300166: roof
+    2300168: sign
+    2300170: sign 1
+    2300172: sign01
+    2300174: sign02
+    2300176: sign03
+    2300178: speakerfl
+    2300180: speakerfl02
+    2300182: speakerrl
+    2300184: speakerrl02
+    2300186: steringwheel
+    2300188: trunk l
+    2300190: trunkinterior
+    2300192: Tube02
+    2300194: Tube03
+    2300196: undercarriage
+    2300198: ventilation1
+    2300200: ventilation3
+    2300202: ventilation4
+    2300204: ventilation5
+    2300206: wheel
+    2300208: wheel01
+    2300210: wheel02
+    2300212: wheel03
+    3300000: backdoor
+    3300002: backdoor02
+    3300004: backdoor03
+    3300006: backdoor04
+    3300008: backdoor05
+    3300010: backdoor06
+    3300012: backdoor07
+    3300014: backdoor08
+    3300016: backseats
+    3300018: blinker
+    3300020: blinker01
+    3300022: body
+    3300024: body01
+    3300026: Box01
+    3300028: Box02
+    3300030: chrome
+    3300032: chrome 1
+    3300034: chrome 2
+    3300036: chrome01
+    3300038: chrome02
+    3300040: chrome03
+    3300042: chrome04
+    3300044: chrome05
+    3300046: chrome06
+    3300048: chrome07
+    3300050: clocks
+    3300052: compartment
+    3300054: Cylinder01
+    3300056: Cylinder02
+    3300058: Cylinder04
+    3300060: dash2
+    3300062: dashboard
+    3300064: driverseat
+    3300066: frontdoor
+    3300068: frontdoor02
+    3300070: frontdoor03
+    3300072: frontdoor04
+    3300074: frontwindscreen
+    3300076: glass
+    3300078: glass01
+    3300080: gum
+    3300082: gum 1
+    3300084: gum 2
+    3300086: gum 3
+    3300088: gum 4
+    3300090: gum 5
+    3300092: gum 6
+    3300094: gum 7
+    3300096: gum01
+    3300098: gum02
+    3300100: gum03
+    3300102: gum04
+    3300104: gum05
+    3300106: gum06
+    3300108: gum07
+    3300110: gum08
+    3300112: gum09
+    3300114: gum10
+    3300116: gum11
+    3300118: gum12
+    3300120: gum13
+    3300122: gum14
+    3300124: idrivecontrol
+    3300126: innerhandlefl
+    3300128: innerhandlefl02
+    3300130: innerhandlerl
+    3300132: innerhandlerl02
+    3300134: interior
+    3300136: lcd
+    3300138: leftdoorsill01
+    3300140: Line01
+    3300142: Line02
+    3300144: Line03
+    3300146: ontunnelpanel
+    3300148: passengerseat
+    3300150: r light
+    3300152: r light01
+    3300154: rearleftfender
+    3300156: rearwindscreen
+    3300158: red
+    3300160: red01
+    3300162: red02
+    3300164: red03
+    3300166: roof
+    3300168: sign
+    3300170: sign 1
+    3300172: sign01
+    3300174: sign02
+    3300176: sign03
+    3300178: speakerfl
+    3300180: speakerfl02
+    3300182: speakerrl
+    3300184: speakerrl02
+    3300186: steringwheel
+    3300188: trunk l
+    3300190: trunkinterior
+    3300192: Tube02
+    3300194: Tube03
+    3300196: undercarriage
+    3300198: ventilation1
+    3300200: ventilation3
+    3300202: ventilation4
+    3300204: ventilation5
+    3300206: wheel
+    3300208: wheel01
+    3300210: wheel02
+    3300212: wheel03
+    4300000: rearleftfender
+    4300002: roof
+    4300004: undercarriage
+    4300006: trunkinterior
+    4300008: rearwindscreen
+    4300010: interior
+    4300012: frontwindscreen
+    4300014: backseats
+    4300016: ontunnelpanel
+    4300018: idrivecontrol
+    4300020: dashboard
+    4300022: ventilation3
+    4300024: ventilation1
+    4300026: ventilation4
+    4300028: ventilation5
+    4300030: clocks
+    4300032: lcd
+    4300034: dash2
+    4300036: compartment
+    4300038: steringwheel
+    4300040: driverseat
+    4300042: passengerseat
+    4300044: leftdoorsill01
+    4300046: blinker
+    4300048: blinker01
+    4300050: Box01
+    4300052: Box02
+    4300054: r light
+    4300056: r light01
+    4300058: trunk l
+    4300060: gum
+    4300062: Cylinder01
+    4300064: Tube02
+    4300066: gum
+    4300068: gum
+    4300070: Line01
+    4300072: glass
+    4300074: Tube03
+    4300076: gum01
+    4300078: Cylinder02
+    4300080: gum02
+    4300082: gum03
+    4300084: Line02
+    4300086: glass01
+    4300088: Line03
+    4300090: body
+    4300092: chrome
+    4300094: gum
+    4300096: chrome01
+    4300098: body01
+    4300100: gum05
+    4300102: sign
+    4300104: Cylinder04
+    4300106: sign
+    4300108: red
+    4300110: gum
+    4300112: wheel
+    4300114: chrome
+    4300116: gum
+    4300118: chrome
+    4300120: gum
+    4300122: sign01
+    4300124: red01
+    4300126: gum06
+    4300128: wheel01
+    4300130: chrome02
+    4300132: gum07
+    4300134: chrome03
+    4300136: gum08
+    4300138: gum09
+    4300140: sign02
+    4300142: red02
+    4300144: gum10
+    4300146: wheel02
+    4300148: chrome04
+    4300150: chrome05
+    4300152: gum11
+    4300154: wheel03
+    4300156: sign03
+    4300158: red03
+    4300160: gum12
+    4300162: chrome06
+    4300164: gum13
+    4300166: chrome07
+    4300168: gum14
+    4300170: innerhandlefl02
+    4300172: speakerfl02
+    4300174: speakerrl02
+    4300176: innerhandlerl02
+    4300178: innerhandlefl
+    4300180: speakerfl
+    4300182: speakerrl
+    4300184: innerhandlerl
+    4300186: frontdoor
+    4300188: gum
+    4300190: backdoor02
+    4300192: backdoor03
+    4300194: frontdoor02
+    4300196: backdoor04
+    4300198: backdoor
+    4300200: gum04
+    4300202: frontdoor03
+    4300204: backdoor05
+    4300206: backdoor06
+    4300208: frontdoor04
+    4300210: backdoor07
+    4300212: backdoor08
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
