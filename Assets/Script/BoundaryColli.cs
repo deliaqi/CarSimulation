@@ -20,6 +20,6 @@ public class BoundaryColli : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider collider)
 	{
-		Debug.Log("OnTriggerEnter = " + collider.gameObject.name);
+		Debug.Log("Trigger碰撞到的物体的名字是" + collider.gameObject.name);
 	}
 }
