@@ -10,7 +10,6 @@ public class CarControl_MapLoad : MonoBehaviour {
 	private Vector3 RotateDirection;
 	//private Vector3 CurrentRoad;//当前所在第几块道路
 	private bool ReadyToLoad;
-	private bool ReadyToChangeCurrent;
 	private GameObject CurrentRoad;
 	//private int CurrentRoadType;
 	private int CurrentRoadNum;
@@ -24,12 +23,13 @@ public class CarControl_MapLoad : MonoBehaviour {
 	private float NewP;
 	private float RoadModuleSize;
 	//地图存储数组
+	public int maprows=10+2;
+	public int mapcols=10+2;
 	public int[,] map = new int[12,12];
 	public int Start_i,Start_j;
 	private int End_i, End_j;
 	private int LastRoadNum;//记录上一个模块
 	private int NextRoadNum;
-	private bool Isstraight20;
 	//private float MaxSpeed = 10;
 	// Use this for initialization
 	void Start () {
@@ -48,21 +48,19 @@ public class CarControl_MapLoad : MonoBehaviour {
 			{0,0,0,0,0,0,0,0,0,0,0,0}};
 		Start_i = 10;
 		Start_j = 8;
-		CurrentRoadNum = 12 * Start_i + Start_j + 1;//初始化起点为[9,7]
+		CurrentRoadNum = mapcols * Start_i + Start_j + 1;//初始化起点为[9,7]
 		End_i = 10;
 		End_j = 9;
-		LastRoadNum = 12 * End_i + End_j + 1;//初始化LastRoadNum为终点
+		LastRoadNum = maprows * End_i + End_j + 1;//初始化LastRoadNum为终点
 		RoadModuleSize = 4.9f;
 		ReadyToLoad = false;
-		ReadyToChangeCurrent = false;
-		Isstraight20 = false;
 		//CurrentRoadType = 1;
 		CurrentRoad = LoadRoad(1,CurrentRoadNum);
 		Speed = 2f;
 		//RotateSpeed = 10f;
 		Direction = new Vector3 (0,0,1);
 		RotateDirection = new Vector3 (0,TurnAngle,0);//转弯幅度，-1左转，1右转
-	
+		Debug.Log ("IsCorrecttMap:"+IsCorrecttMap());
 	}
 	
 	// Update is called once per frame
@@ -108,12 +106,12 @@ public class CarControl_MapLoad : MonoBehaviour {
 			LastRoadNum = CurrentRoadNum;
 			CurrentRoadNum = NextRoadNum;
 			int ii,jj;
-			ii = CurrentRoadNum / 12;
-			if (CurrentRoadNum % 12 == 0) {
+			ii = CurrentRoadNum / mapcols;
+			if (CurrentRoadNum % mapcols == 0) {
 				ii = ii-1;
-				jj = 11;
+				jj = mapcols-1;
 			} else {
-				jj = CurrentRoadNum - ii * 12 - 1;
+				jj = CurrentRoadNum - ii * mapcols - 1;
 			}
 			CurrentRoad = LoadRoad(map[ii,jj],CurrentRoadNum);
 			Debug.Log("last:"+LastRoadNum+" current:"+CurrentRoadNum+" next:"+NextRoadNum);
@@ -125,9 +123,9 @@ public class CarControl_MapLoad : MonoBehaviour {
 	}
 
 	private int GetMapNum(int ii,int jj){
-		return ii * 12 + jj + 1;
+		return ii * mapcols + jj + 1;
 	}
-
+	/*
 	private int[] Getij(int num){
 		int[] pos =new int[2];
 		pos[0] = num / 12;
@@ -138,19 +136,19 @@ public class CarControl_MapLoad : MonoBehaviour {
 			pos[1] = num - pos[0] * 12 - 1;
 		}
 		return pos;
-	}
+	}*/
 
 	//根据当前道路类型Load当前道路GameObject,后期生成接口给用户，可自定义地图
 	private int LoadNeighborRoad(int currentroadnum,int lastroadnum){
 		int i, j;
 		int nextroadnum = currentroadnum;
 		int nextroad = 0;
-		i = currentroadnum / 12;
-		if (currentroadnum % 12 == 0) {
+		i = currentroadnum / mapcols;
+		if (currentroadnum % mapcols == 0) {
 			i = i-1;
-			j = 11;
+			j = mapcols-1;
 		} else {
-			j = currentroadnum - i * 12 - 1;
+			j = currentroadnum - i * mapcols - 1;
 		}
 		Vector3 nextposition = new Vector3 (Curx,Cury,CurZ);
 		//获得下一模块的位置
@@ -186,8 +184,8 @@ public class CarControl_MapLoad : MonoBehaviour {
 
 	private GameObject LoadRoad(int roadtype,int roadnum){
 		int rows;
-		rows = roadnum / 12;
-		if (roadnum % 12 != 0) {
+		rows = roadnum / mapcols;
+		if (roadnum % mapcols != 0) {
 			rows =rows+1;
 		}
 		GameObject road;
@@ -209,6 +207,39 @@ public class CarControl_MapLoad : MonoBehaviour {
 		}
 		Debug.Log ("LoadRoadPos:"+road.transform.position);
 		return road;
+	}
+
+	private bool IsCorrecttMap(){
+		for (int m=0; m<maprows; m++) {
+			for(int n=0; n<mapcols; n++){
+				if(map[m,n] == 1){
+					if(!((map[m,n-1] == 1 || map[m,n-1] == 3 || map[m,n-1] == 4) 
+					   && (map[m,n+1] == 1 || map[m,n+1] == 5 || map[m,n+1] == 6)
+					     && map[m-1,n] == 0 && map[m+1,n] == 0)){return false;}
+				}else if(map[m,n] == 2){
+					if(!((map[m-1,n] == 2 || map[m-1,n] == 3 || map[m-1,n] == 6) 
+					     && (map[m+1,n] == 2 || map[m+1,n] == 4 || map[m+1,n] == 5)
+					     && map[m,n-1] == 0 && map[m,n+1] == 0)){return false;}
+				}else if(map[m,n] == 3){
+					if(!((map[m+1,n] == 2 || map[m+1,n] == 4 || map[m+1,n] == 5)
+					   &&(map[m,n+1] == 1 || map[m,n+1] == 5 || map[m,n+1] == 6)
+					   && map[m,n-1] == 0 && map[m-1,n] == 0)){return false;}
+				}else if(map[m,n] == 4){
+					if(!((map[m-1,n] == 2 || map[m-1,n] == 3 || map[m-1,n] == 6)
+					   && (map[m,n+1] == 1 || map[m+1,n] == 5 || map[m+1,n] == 6)
+					     && map[m,n-1] == 0 && map[m+1,n] == 0)){return false;}
+				}else if(map[m,n] == 5){
+					if(!((map[m,n-1] == 1 || map[m,n-1] == 3 || map[m,n-1] == 4)
+					   && (map[m-1,n] == 2 || map[m-1,n] == 3 || map[m-1,n] == 6)
+					     && map[m+1,n] == 0 && map[m,n+1] == 0)){return false;}
+				}else if(map[m,n] == 6){
+					if(!((map[m,n-1] == 1 || map[m,n-1] == 3 || map[m,n-1] == 4)
+					     && (map[m+1,n] == 2 || map[m+1,n] == 4 || map[m+1,n] == 5)
+					     && map[m-1,n] == 0 && map[m,n+1] == 0)){return false;}
+				}
+			}
+		}
+		return true;
 	}
 	
 }
