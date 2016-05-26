@@ -48,6 +48,7 @@
      <Compile Include="Assets\Script\BoundaryColli.cs" />
      <Compile Include="Assets\Script\CameraControl.cs" />
      <Compile Include="Assets\Script\CarControl.cs" />
+     <Compile Include="Assets\Script\CarControl_MapLoad.cs" />
      <Compile Include="Assets\Script\createMap.cs" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>

@@ -5,7 +5,7 @@ public class CarControl : MonoBehaviour {
 	//public Transform target;//要跟踪的车
 	public GameObject followcar ;
 	private float Speed;
-	private float RotateSpeed;
+	//private float RotateSpeed;
 	private Vector3 Direction;
 	private Vector3 RotateDirection;
 	//private Vector3 CurrentRoad;//当前所在第几块道路
@@ -24,7 +24,7 @@ public class CarControl : MonoBehaviour {
 	//private float MaxSpeed = 10;
 
 	// Use this for initialization
-	void Start () {
+	void Start () { 
 		RoadModuleSize = 4.9f;
 		ReadyToLoad = false;
 		CurrentRoadType = 1;
@@ -33,7 +33,7 @@ public class CarControl : MonoBehaviour {
 		//target = gameObject.GetComponent<Transform>();
 		//followcar = gameObject.GetComponent<GameObject>();
 		Speed = 2f;
-		RotateSpeed = 10f;
+		//RotateSpeed = 10f;
 		Direction = new Vector3 (0,0,1);
 		RotateDirection = new Vector3 (0,TurnAngle,0);//转弯幅度，-1左转，1右转
 		//transform.position = new Vector3 (0,0,-2);
